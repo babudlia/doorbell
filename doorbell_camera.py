@@ -214,6 +214,17 @@ def main_loop():
     (major_ver, minor_ver, subminor_ver) = (cv2.__version__).split('.')
     fps = video.get(cv2.CAP_PROP_FPS)
     print ('Frames per second using video.get(cv2.CAP_PROP_FPS) : {0}'.format('fps'))
+    num_frames = 120
+    print ('Capturing {0} frames'.format('num_frames'))
+    start = time.time()
+    for i in xrange(0, num_frames) :
+        ret, frame = video.read()
+    end = time.time()
+    seconds = end - start
+    print ('Time taken : {0} seconds'.format('seconds'))
+    fps  = num_frames / seconds
+    print ('Estimated frames per second : {0}'.format(fps))
+
     # Release handle to the webcam
     video_capture.release()
     cv2.destroyAllWindows()
