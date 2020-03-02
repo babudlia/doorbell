@@ -113,8 +113,8 @@ def lookup_known_face(face_encoding):
 
 def main_loop():
     if running_on_jetson_nano():
-        #video_capture = cv2.VideoCapture("http://192.168.0.101:8080/video")
-        video_capture = cv2.VideoCapture("1.ogv")
+        video_capture = cv2.VideoCapture("http://192.168.0.101:8080/video")
+        #video_capture = cv2.VideoCapture("1.ogv")
     else:
         video_capture = cv2.VideoCapture(0)
 
