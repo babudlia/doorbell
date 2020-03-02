@@ -219,7 +219,7 @@ def main_loop():
         print("Capturing {0} frames".format(num_frames))
         start = time.time()
         for i in range(0, num_frames):
-            ret, frame = cap.read()
+            ret, frame = video_capture.read()
         end = time.time()
         seconds = end - start
         print("Time taken : {0} seconds".format(seconds))
