@@ -114,7 +114,7 @@ def main_loop():
     # Get access to the webcam. The method is different depending on if this is running on a laptop or a Jetson Nano.
     if running_on_jetson_nano():
         # Accessing the camera with OpenCV on a Jetson Nano requires gstreamer with a custom gstreamer source string
-        video_capture = cv2.VideoCapture(get_jetson_gstreamer_source(), cv2.CAP_GSTREAMER)
+        video_capture = cv2.VideoCapture(http://192.168.0.101:8080/video)
     else:
         # Accessing the camera with OpenCV on a laptop just requires passing in the number of the webcam (usually 0)
         # Note: You can pass in a filename instead if you want to process a video file instead of a live camera stream
