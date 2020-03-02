@@ -213,7 +213,7 @@ def main_loop():
         else:
             number_of_faces_since_save += 1
 
-        fps = cap.get(cv2.CAP_PROP_FPS)
+        fps = video.get(cv2.CAP_PROP_FPS)
         print("Frames per second using video.get(cv2.CAP_PROP_FPS) : {0}".format(fps))
         num_frames = 120
         print("Capturing {0} frames".format(num_frames))
