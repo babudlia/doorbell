@@ -212,7 +212,7 @@ def main_loop():
             number_of_faces_since_save = 0
         else:
             number_of_faces_since_save += 1
-        fps = video_capture.get(cv2.CAP_PROP_FPS)
+        '''fps = video_capture.get(cv2.CAP_PROP_FPS)
         #print("Frames per second using video.get(cv2.CAP_PROP_FPS) : {0}".format(fps))
         num_frames = 120
         #print("Capturing {0} frames".format(num_frames))
@@ -223,7 +223,7 @@ def main_loop():
         seconds = end - start
         #print("Time taken : {0} seconds".format(seconds))
         fps = num_frames / seconds
-        print("Estimated frames per second : {0}".format(fps))
+        print("Estimated frames per second : {0}".format(fps)'''
 
     video_capture.release()
     cv2.destroyAllWindows()
