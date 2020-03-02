@@ -210,7 +210,8 @@ def main_loop():
             number_of_faces_since_save = 0
         else:
             number_of_faces_since_save += 1
-
+    fps = video.get(cv2.cv.CV_CAP_PROP_FPS)
+    print "Frames per second using video.get(cv2.cv.CV_CAP_PROP_FPS): {0}".format(fps)
     # Release handle to the webcam
     video_capture.release()
     cv2.destroyAllWindows()
