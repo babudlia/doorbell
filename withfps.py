@@ -153,7 +153,7 @@ def lookup_known_face(face_encoding):
 def main_loop():
     if running_on_jetson_nano():
         video_capture = cv2.VideoCapture(get_jetson_gstreamer_source(), cv2.CAP_GSTREAMER)
-        video_capture = cv2.VideoCapture(gstreamer_pipeline(flip_method=0), cv2.CAP_GSTREAMER)
+        #video_capture = cv2.VideoCapture(gstreamer_pipeline(flip_method=0), cv2.CAP_GSTREAMER)
         #video_capture = cv2.VideoCapture("http://192.168.0.101:8080/video")
         #video_capture = cv2.VideoCapture("1.ogv")
     else:
