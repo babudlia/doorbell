@@ -263,7 +263,7 @@ def main_loop():
             ret, frame = video_capture.read()
         end = time.time()
         seconds = end - start
-        #print("Time taken : {0} seconds".format(seconds))
+        print("Time taken : {0} seconds".format(seconds))
         fps = num_frames / seconds
         print("Estimated frames per second : {0}".format(fps))
 
